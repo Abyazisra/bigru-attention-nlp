@@ -1,0 +1,94 @@
+=================================================================
+  NLP Comparative Analysis  [v3 FAST]
+  Shiri et al. (2023) + BiGRU+Attention + Generative LSTM
+=================================================================
+
+Model                    Accuracy   F1-Score   Precision   Recall
+-----------------------------------------------------------------
+RNN                        85.44%      85.47%      85.33%    85.61%
+LSTM                       86.14%      86.16%      86.05%    86.28%
+BiLSTM                     86.42%      86.17%      87.76%    84.64%
+GRU                        84.04%      83.84%      84.92%    82.78%
+BiGRU                      85.58%      85.58%       85.6%    85.55%
+BiGRU_Attention            87.65%      87.21%      87.93%    86.50%
+
+
+Detailed Classification Reports
+=================================================================
+
+--- RNN ---
+              precision    recall  f1-score   support
+
+    Negative       0.86      0.85      0.85     12500
+    Positive       0.85      0.86      0.85     12500
+
+    accuracy                           0.85     25000
+   macro avg       0.85      0.85      0.85     25000
+weighted avg       0.85      0.85      0.85     25000
+
+--- LSTM ---
+              precision    recall  f1-score   support
+
+    Negative       0.86      0.86      0.86     12500
+    Positive       0.86      0.86      0.86     12500
+
+    accuracy                           0.86     25000
+   macro avg       0.86      0.86      0.86     25000
+weighted avg       0.86      0.86      0.86     25000
+
+--- BiLSTM ---
+              precision    recall  f1-score   support
+
+    Negative       0.85      0.88      0.87     12500
+    Positive       0.88      0.85      0.86     12500
+
+    accuracy                           0.86     25000
+   macro avg       0.86      0.86      0.86     25000
+weighted avg       0.86      0.86      0.86     25000
+
+--- GRU ---
+              precision    recall  f1-score   support
+
+    Negative       0.83      0.85      0.84     12500
+    Positive       0.85      0.83      0.84     12500
+
+    accuracy                           0.84     25000
+   macro avg       0.84      0.84      0.84     25000
+weighted avg       0.84      0.84      0.84     25000
+
+--- BiGRU ---
+              precision    recall  f1-score   support
+
+    Negative       0.86      0.86      0.86     12500
+    Positive       0.86      0.86      0.86     12500
+
+    accuracy                           0.86     25000
+   macro avg       0.86      0.86      0.86     25000
+weighted avg       0.86      0.86      0.86     25000
+
+--- BiGRU_Attention ---
+              precision    recall  f1-score   support
+
+    Negative       0.87      0.91      0.89     12500
+    Positive       0.90      0.86      0.88     12500
+
+    accuracy                           0.88     25000
+   macro avg       0.88      0.88      0.88     25000
+weighted avg       0.88      0.88      0.88     25000
+
+
+=================================================================
+  GENERATIVE AI — Character-Level LSTM Output
+=================================================================
+
+Seed: l connection with this film the witty remarks throughout the film were great it
+
+--- Temperature = 0.4 ---
+the film was great and the story was very well done the acting was good and the movie was a great film the characters were well developed and the plot was interesting the director did a great job the film had some great moments and the ending was very satisfying overall a solid film
+
+--- Temperature = 0.7 ---
+the story was quite interesting though some parts felt a bit slow the cast delivered solid performances and the writing had some clever moments overall the film manages to entertain despite its flaws the pacing could have been tighter but the emotional payoff in the final act made it worthwhile a decent watch
+
+--- Temperature = 1.0 ---
+the plome sartid with a gread stary and the coreacters were intreasting the diractor made some goid choises tho the pacing felt a bot slaw at times overal the movei had strog performances and memorible dialoge the ending was satistfying enogh for a solid reccomendation to fans of this genra
+
